@@ -3,6 +3,7 @@ public class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
+    //protected - Publico para os filhos
 
 
     public double getBonificacao(){

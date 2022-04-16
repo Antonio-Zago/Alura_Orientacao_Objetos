@@ -13,9 +13,16 @@ public class Gerente extends Funcionario {
         }
     }
 
-    /*public double getBonificacao(){
-        return this.salario;
-    }*/
+    //sobrecarga de método, leva em conta os parametros de entrada
+    public boolean autentica(int senha, String login){
+        return true;
+    }
+
+    //Reescrita de método, utilizando a mesma assinatura(visibilidade, retorno e nome)
+    public double getBonificacao(){
+        //Chamando o metodo da super classe
+        return super.getBonificacao() + super.getSalario();//Indica que vem da super classe(Classe em que está herdando)
+    }
 
 
 
